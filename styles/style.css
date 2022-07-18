@@ -224,17 +224,16 @@ header {
 
 @media only screen and (max-width: 688px) {
 
-    .container,
     .menu-bar {
-        width: 85%;
+        width: 90%;
     }
 
-    header {
-        width: 100%;
+    .container {
+        width: 90%;
+        padding: 5px;
     }
 
     .nav-right {
-
         gap: 10px;
     }
 
