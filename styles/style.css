@@ -74,8 +74,8 @@ main {
 
 .blog {
     display: flex;
+    align-items: center;
 }
-
 
 
 .blog .thumbnail img {
@@ -87,10 +87,7 @@ main {
     margin-left: 16px;
 }
 
-.blog-title {
-    font-size: 20px;
 
-}
 
 .blog-author {
     font-size: 16px;
@@ -168,16 +165,36 @@ main {
         width: 100%;
     }
 
-    .players,
-    .blogs,
-    .courses {
+
+
+    .section-title {
+        text-align: center;
+    }
+
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blogs {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .player,
-    .blog {
+    .player {
         flex-direction: column;
     }
+
+    .player img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+
+
 
 
 }
